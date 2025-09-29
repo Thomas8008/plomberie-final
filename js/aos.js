@@ -1,14 +1,10 @@
-// Init AOS
-AOS.init({
-  once: true,
-  duration: 800
-});
+// js/aos.js
+window.addEventListener('load', () => {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
-// Init GLightbox
-const lightbox = GLightbox({
-  selector: '.glightbox',
-  touchNavigation: true,
-  loop: true,
-  closeButton: true
+  AOS.init({
+    once: true,
+    duration: 600,   // 600 au lieu de 800 (un peu moins de coût)
+    offset: 80
+  });
 });
-
