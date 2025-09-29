@@ -4,7 +4,7 @@ window.addEventListener('load', () => {
 
   AOS.init({
     once: true,
-    duration: 600,   // 600 au lieu de 800 (un peu moins de coût)
+    duration: 600,
     offset: 80
   });
 });
