@@ -1,7 +1,7 @@
 // Init AOS
 AOS.init({
   once: true,
-  duration: 800
+  duration: 600
 });
 
 // Init GLightbox
